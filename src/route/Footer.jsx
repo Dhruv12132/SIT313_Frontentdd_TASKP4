@@ -1,6 +1,11 @@
 import "./Footer.css"
 import { Link } from "react-router-dom"
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faTwitter,
+  faInstagram
+} from "@fortawesome/free-brands-svg-icons";
 function Footer() {
   return (
     <footer className="footer">
@@ -46,15 +51,50 @@ function Footer() {
         </div>
 
 
-        <div>
-          <h3>
-            Stay Connected
-          </h3>
+        
 
-          <a href="#">Facebook</a>
-          <a href="#">Twitter</a>
-          <a href="#">Instagram</a>
-        </div>
+<div className="footer-social">
+  <h3>Stay Connected</h3>
+
+  <div className="social-icons">
+    
+<div className="footer-social">
+  <h3>Stay Connected</h3>
+
+  <div className="social-icons">
+    <a
+      href="https://www.facebook.com/"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Facebook"
+    >
+      <FontAwesomeIcon icon={faFacebookF} />
+    </a>
+
+    <a
+      href="https://twitter.com/"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Twitter"
+    >
+      <FontAwesomeIcon icon={faTwitter} />
+    </a>
+
+    <a
+      href="https://www.instagram.com/"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Instagram"
+    >
+      <FontAwesomeIcon icon={faInstagram} />
+    </a>
+  </div>
+</div>
+
+  </div>
+</div>
+
+
 
       </div>
 
